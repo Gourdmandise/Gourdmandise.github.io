@@ -1,0 +1,204 @@
+body {
+    font-family: bahnschrift, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #008080    ;
+}
+/* 
+a.button  {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #1c0f7d42; 
+}*/
+
+a.button {
+	box-shadow: 0px 0px 0px 2px #fefed8;
+	background:linear-gradient(to bottom, #008080 5%, #008080 100%);
+	background-color:#7892c2;
+	border-radius:10px;
+	border:1px solid #fefed8;
+	display:inline-block;   
+	cursor:pointer;
+	color:#fefed8;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+a.button:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+a.button:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+nav {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+header, section, footer {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #fffad9    ;
+    border-radius: 5px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 350%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 150%;
+}
+
+nav li {
+    display: inline;
+    //margin-right: 10px;
+    //border-style: ridge;   
+}
+
+nav a {
+    text-decoration: none;
+    color: #fffad9    ;
+    margin: 15px;
+    padding: 20px;
+}
+
+/* Couleurs spécifiques pour Ma Passion et Projet */
+body.page-ma-passion {
+    background-color: #6edaf0    ;
+}
+
+body.page-projet {
+    background-color: #6edaf0    ;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #fffad9    ;
+}
+
+h2
+{
+    color: #fffad9    ;
+}
+
+p
+{
+    color: #fffad9    ;
+    font-size: 120%;
+}
+
+
+table, caption, th, td { 
+    width : 600px;
+    border: 3px solid #000000
+    ;
+    text-align: center; 
+      border-collapse: collapse;
+     
+    
+    }
+    caption, th, td {
+    
+    padding: 12px;
+    
+    }
+    
+    caption {
+    
+    background-color: lightgrey;
+    
+    }
+    
+    th {
+    
+    background-color: #008080;
+    
+    }
+    
+    td {
+    
+    background-color: #008080;
+    
+    }
+    .centrer {
+  margin-right:auto;
+  margin-left:auto;
+}
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+.slider-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    left : 127px;
+    height: 350px;
+    overflow: hidden;
+}
+.menu 
+{
+    position: absolute;
+    left: -125px;
+    z-index: 11;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+.menu label 
+{
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50px;
+    margin: 0 0.2em 1em;
+}
+.menu label:hover,.menu label:focus {
+    background: #1c87c9;
+}
+.slide-input{
+    opacity: 0;
+}
+.slide-img {
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    transition: left 0s 0.75s;
+}
+[id^="slide"]:checked + .slide-img {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+}
+
+.button img{
+    width: 30px;
+   
+}
