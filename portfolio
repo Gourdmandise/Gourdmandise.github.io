@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projet</title>
+</head>
+<body>
+    <!-- Entête -->
+    <header style="background-color: #fffad9     ; color: #008080   ;"> 
+        <h1><center>Futur projet</center></h1>
+    </header>
+
+
+ <!-- Menu de navigation -->
+ <nav>
+    <ul>
+        <li><a class="button" href="Index2.html">Accueil</a></li>
+        <li><a class="button" href="projet.html">Projet</a></li>
+    </ul>
+</nav>
+
+    <!-- Section principale -->
+    <section>
+        <h2>Projet</h2>
+        <p>...</p>
+    </section>
+
+        <!-- Section principale -->
+        <section>
+            <h2>Autre</h2>
+            <p>...</p>
+        </section>
+
+        <!-- Section principale -->
+        <section>
+            <h2>Autre</h2>
+            <p>...</p>
+        </section>
+
+   <!-- Bas de page -->
+   <footer style="background-color: #008080   ; color: #fffad9   ;">
+    <p>&copy; 2024 Rayan.Saboun. Tous droits réservés.</p>
+</footer>
+</body>
+</html>
