@@ -1,1 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manhwa - Rayan Saboun</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Particules -->
+    <div class="particles" id="particles"></div>
 
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1><i class="fas fa-book-open"></i> Manhwa</h1>
+            <p class="subtitle">Ma passion pour les webtoons coréens</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="index.html" class="nav-btn">
+                <i class="fas fa-home"></i> Accueil
+            </a>
+            <a href="informations.html" class="nav-btn">
+                <i class="fas fa-info-circle"></i> Informations
+            </a>
+        </nav>
+
+        <!-- Bouton retour -->
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Retour aux passions
+        </a>
+
+        <!-- Section Introduction -->
+        <div class="section">
+            <h2><i class="fas fa-heart"></i> Ma Passion</h2>
+            <p>
+                <!-- MODIFIE CE TEXTE -->
+                Décris ici ta passion pour les manhwas. Comment tu as découvert ce genre,
+                ce que tu aimes dedans, les genres que tu préfères (action, romance, fantasy...), etc.
+            </p>
+        </div>
+
+        <!-- Section Manhwas Préférés -->
+        <div class="section">
+            <h2><i class="fas fa-star"></i> Mes Manhwas Préférés</h2>
+            <div class="manhwa-grid">
+                <!-- MODIFIE CES MANHWAS -->
+                <div class="manhwa-card">
+                    <div class="manhwa-cover">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="manhwa-info">
+                        <h3>Titre du Manhwa 1</h3>
+                        <p class="genre">Genre: Action/Fantasy</p>
+                        <p class="rating"><i class="fas fa-star"></i> 9/10</p>
+                    </div>
+                </div>
+                <div class="manhwa-card">
+                    <div class="manhwa-cover">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="manhwa-info">
+                        <h3>Titre du Manhwa 2</h3>
+                        <p class="genre">Genre: Action</p>
+                        <p class="rating"><i class="fas fa-star"></i> 8/10</p>
+                    </div>
+                </div>
+                <div class="manhwa-card">
+                    <div class="manhwa-cover">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="manhwa-info">
+                        <h3>Titre du Manhwa 3</h3>
+                        <p class="genre">Genre: Fantasy</p>
+                        <p class="rating"><i class="fas fa-star"></i> 9/10</p>
+                    </div>
+                </div>
+                <div class="manhwa-card">
+                    <div class="manhwa-cover">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="manhwa-info">
+                        <h3>Titre du Manhwa 4</h3>
+                        <p class="genre">Genre: Romance</p>
+                        <p class="rating"><i class="fas fa-star"></i> 8/10</p>
+                    </div>
+                </div>
+            </div>
+            <p class="hint">
+                💡 Tu peux remplacer les icônes par des images de couverture
+            </p>
+        </div>
+
+        <!-- Section En cours de lecture -->
+        <div class="section">
+            <h2><i class="fas fa-book-reader"></i> En Cours de Lecture</h2>
+            <ul class="passion-list">
+                <!-- MODIFIE CETTE LISTE -->
+                <li>Titre 1 - Chapitre XX</li>
+                <li>Titre 2 - Chapitre XX</li>
+                <li>Titre 3 - Chapitre XX</li>
+            </ul>
+        </div>
+
+        <!-- Section Stats -->
+        <div class="section">
+            <h2><i class="fas fa-chart-bar"></i> Mes Stats</h2>
+            <div class="stats-grid">
+                <!-- MODIFIE CES VALEURS -->
+                <div class="stat-card">
+                    <span class="stat-number">?</span>
+                    <span class="stat-label">Manhwas lus</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">?</span>
+                    <span class="stat-label">En cours</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">?</span>
+                    <span class="stat-label">Chapitres lus</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">?</span>
+                    <span class="stat-label">Note moyenne</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Rayan Saboun. Tous droits réservés.</p>
+            <p><a href="mailto:rayan.saboun@gmail.com"><i class="fas fa-envelope"></i> rayan.saboun@gmail.com</a></p>
+        </footer>
+    </div>
+
+    <script>
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 20; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 15 + 's';
+            particle.style.animationDuration = (10 + Math.random() * 10) + 's';
+            particlesContainer.appendChild(particle);
+        }
+    </script>
+</body>
+</html>
