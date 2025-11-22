@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origami - Rayan Saboun</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Particules -->
+    <div class="particles" id="particles"></div>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1><i class="fas fa-paper-plane"></i> Origami</h1>
+            <p class="subtitle">L'art du pliage de papier</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="index.html" class="nav-btn">
+                <i class="fas fa-home"></i> Accueil
+            </a>
+            <a href="informations.html" class="nav-btn">
+                <i class="fas fa-info-circle"></i> Informations
+            </a>
+        </nav>
+
+        <!-- Bouton retour -->
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Retour aux passions
+        </a>
+
+        <!-- Section Introduction -->
+        <div class="section">
+            <h2><i class="fas fa-heart"></i> Ma Passion</h2>
+            <p>
+                <!-- MODIFIE CE TEXTE -->
+                Décris ici ta passion pour l'origami. Depuis quand tu pratiques, 
+                ce qui t'a attiré vers cet art, etc.
+            </p>
+        </div>
+
+        <!-- Section Créations -->
+        <div class="section">
+            <h2><i class="fas fa-star"></i> Mes Créations</h2>
+            <div class="gallery-grid">
+                <!-- AJOUTE TES IMAGES ICI -->
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>Image 1</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>Image 2</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>Image 3</span>
+                    </div>
+                </div>
+            </div>
+            <p class="hint">
+                💡 Pour ajouter tes images, remplace les div "gallery-placeholder" par des balises img
+            </p>
+        </div>
+
+        <!-- Section Modèles Préférés -->
+        <div class="section">
+            <h2><i class="fas fa-list"></i> Mes Modèles Préférés</h2>
+            <ul class="passion-list">
+                <!-- MODIFIE CETTE LISTE -->
+                <li>Grue japonaise</li>
+                <li>Dragon</li>
+                <li>Fleur de lotus</li>
+                <li>Ajoute tes modèles ici...</li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Rayan Saboun. Tous droits réservés.</p>
+            <p><a href="mailto:rayan.saboun@gmail.com"><i class="fas fa-envelope"></i> rayan.saboun@gmail.com</a></p>
+        </footer>
+    </div>
+
+    <script>
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 20; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 15 + 's';
+            particle.style.animationDuration = (10 + Math.random() * 10) + 's';
+            particlesContainer.appendChild(particle);
+        }
+    </script>
+</body>
+</html>
