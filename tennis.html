@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis de Table - Rayan Saboun</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Particules -->
+    <div class="particles" id="particles"></div>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1><i class="fas fa-table-tennis-paddle-ball"></i> Tennis de Table</h1>
+            <p class="subtitle">Sport de précision et de réflexes</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="index.html" class="nav-btn">
+                <i class="fas fa-home"></i> Accueil
+            </a>
+            <a href="informations.html" class="nav-btn">
+                <i class="fas fa-info-circle"></i> Informations
+            </a>
+        </nav>
+
+        <!-- Bouton retour -->
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Retour aux passions
+        </a>
+
+        <!-- Section Introduction -->
+        <div class="section">
+            <h2><i class="fas fa-heart"></i> Ma Passion</h2>
+            <p>
+                <!-- MODIFIE CE TEXTE -->
+                Décris ici ta passion pour le tennis de table. Depuis quand tu joues,
+                dans quel club, ton niveau, ce que tu aimes dans ce sport, etc.
+            </p>
+        </div>
+
+        <!-- Section Stats -->
+        <div class="section">
+            <h2><i class="fas fa-trophy"></i> Mes Stats</h2>
+            <div class="stats-grid">
+                <!-- MODIFIE CES VALEURS -->
+                <div class="stat-card">
+                    <span class="stat-number">?</span>
+                    <span class="stat-label">Années de pratique</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">?</span>
+                    <span class="stat-label">Classement</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">?</span>
+                    <span class="stat-label">Tournois joués</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">?</span>
+                    <span class="stat-label">Victoires</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Photos -->
+        <div class="section">
+            <h2><i class="fas fa-camera"></i> Photos</h2>
+            <div class="gallery-grid">
+                <!-- AJOUTE TES IMAGES ICI -->
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>Image 1</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>Image 2</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>Image 3</span>
+                    </div>
+                </div>
+            </div>
+            <p class="hint">
+                💡 Pour ajouter tes images, remplace les div "gallery-placeholder" par des balises img
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Rayan Saboun. Tous droits réservés.</p>
+            <p><a href="mailto:rayan.saboun@gmail.com"><i class="fas fa-envelope"></i> rayan.saboun@gmail.com</a></p>
+        </footer>
+    </div>
+
+    <script>
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 20; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 15 + 's';
+            particle.style.animationDuration = (10 + Math.random() * 10) + 's';
+            particlesContainer.appendChild(particle);
+        }
+    </script>
+</body>
+</html>
