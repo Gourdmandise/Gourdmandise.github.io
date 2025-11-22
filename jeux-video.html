@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeux Vidéo - Rayan Saboun</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Particules -->
+    <div class="particles" id="particles"></div>
 
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1><i class="fas fa-gamepad"></i> Jeux Vidéo</h1>
+            <p class="subtitle">Ma passion pour le gaming</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="index.html" class="nav-btn">
+                <i class="fas fa-home"></i> Accueil
+            </a>
+            <a href="informations.html" class="nav-btn">
+                <i class="fas fa-info-circle"></i> Informations
+            </a>
+        </nav>
+
+        <!-- Bouton retour -->
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Retour aux passions
+        </a>
+
+        <!-- Section Introduction -->
+        <div class="section">
+            <h2><i class="fas fa-heart"></i> Ma Passion</h2>
+            <p>
+                <!-- MODIFIE CE TEXTE -->
+                Décris ici ta passion pour les jeux vidéo. Depuis quand tu joues,
+                sur quelle plateforme, ce que tu aimes dans le gaming, etc.
+            </p>
+        </div>
+
+        <!-- Section Jeux Préférés -->
+        <div class="section">
+            <h2><i class="fas fa-star"></i> Mes Jeux Préférés</h2>
+            <div class="games-grid">
+                <!-- MODIFIE CES JEUX -->
+                <div class="game-card">
+                    <div class="game-icon">🎮</div>
+                    <h3>Nom du Jeu 1</h3>
+                    <p>Genre: RPG</p>
+                    <p>Plateforme: PC</p>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">🎮</div>
+                    <h3>Nom du Jeu 2</h3>
+                    <p>Genre: FPS</p>
+                    <p>Plateforme: PC</p>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">🎮</div>
+                    <h3>Nom du Jeu 3</h3>
+                    <p>Genre: Action</p>
+                    <p>Plateforme: Console</p>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">🎮</div>
+                    <h3>Nom du Jeu 4</h3>
+                    <p>Genre: Sport</p>
+                    <p>Plateforme: Console</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Setup -->
+        <div class="section">
+            <h2><i class="fas fa-desktop"></i> Mon Setup</h2>
+            <ul class="passion-list">
+                <!-- MODIFIE CETTE LISTE -->
+                <li>PC / Console: ...</li>
+                <li>Écran: ...</li>
+                <li>Clavier: ...</li>
+                <li>Souris: ...</li>
+                <li>Casque: ...</li>
+            </ul>
+        </div>
+
+        <!-- Section Profils Gaming -->
+        <div class="section">
+            <h2><i class="fas fa-user-circle"></i> Mes Profils</h2>
+            <div class="social-links">
+                <!-- AJOUTE TES LIENS -->
+                <a href="#" class="social-btn steam">
+                    <i class="fab fa-steam"></i> Steam
+                </a>
+                <a href="#" class="social-btn discord">
+                    <i class="fab fa-discord"></i> Discord
+                </a>
+                <a href="#" class="social-btn twitch">
+                    <i class="fab fa-twitch"></i> Twitch
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Rayan Saboun. Tous droits réservés.</p>
+            <p><a href="mailto:rayan.saboun@gmail.com"><i class="fas fa-envelope"></i> rayan.saboun@gmail.com</a></p>
+        </footer>
+    </div>
+
+    <script>
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 20; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 15 + 's';
+            particle.style.animationDuration = (10 + Math.random() * 10) + 's';
+            particlesContainer.appendChild(particle);
+        }
+    </script>
+</body>
+</html>
