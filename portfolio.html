@@ -3,45 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informations - Rayan Saboun</title>
     <link rel="stylesheet" href="portfolio.css">
-    <title>Informations</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Entête -->
-    <header style="background-color: #fffad9     ; color: #008080   ;"> 
-        <h1><center>Mes Informations</center></h1>
-    </header>
+    <!-- Particules -->
+    <div class="particles" id="particles"></div>
 
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>👨‍💻 Rayan Saboun</h1>
+            <p class="subtitle">Étudiant en BUT Informatique - IUT de Blagnac</p>
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                Recherche de stage - Mars 2025
+            </div>
+        </header>
 
- <!-- Menu de navigation -->
- <nav>
-    <ul>
-        <li><a class="button" href="index.html">Accueil</a></li>
-        <li><a class="button" href="portfolio.html">Information</a></li>
-    </ul>
-</nav>
+        <!-- Navigation -->
+        <nav>
+            <a href="index.html" class="nav-btn">
+                <i class="fas fa-home"></i> Accueil
+            </a>
+            <a href="informations.html" class="nav-btn active">
+                <i class="fas fa-info-circle"></i> Informations
+            </a>
+        </nav>
 
-    <!-- Section principale -->
-    <section>
-        <h2>LinkedIn</h2>
-        <p><a href="https://fr.linkedin.com/in/rayan-saboun-028a452b0" > Lien vers mon Linkedin </a></p>
-    </section>
+        <!-- Section Réseaux Sociaux -->
+        <div class="section">
+            <h2><i class="fas fa-link"></i> Mes Réseaux</h2>
+            <div class="social-links">
+                <a href="https://fr.linkedin.com/in/rayan-saboun-028a452b0" target="_blank" class="social-btn linkedin">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://www.facebook.com/rayan.saboun.54" target="_blank" class="social-btn facebook">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="https://www.youtube.com/watch?v=O7J-00kn7aU" target="_blank" class="social-btn youtube">
+                    <i class="fab fa-youtube"></i> Projet Vidéo
+                </a>
+            </div>
+        </div>
 
-        <!-- Section principale -->
-        <section>
-            <h2>Facebook</h2>
-            <p><a href="https://www.facebook.com/rayan.saboun.54" > Lien vers mon Facebook </a></p>
-        </section>
+        <!-- Section Contact -->
+        <div class="section">
+            <h2><i class="fas fa-address-card"></i> Me Contacter</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>rayan.saboun@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Blagnac, France</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>IUT de Blagnac - BUT Informatique</span>
+                </div>
+            </div>
+        </div>
 
-        <!-- Section principale -->
-        <section>
-            <h2>Youtube</h2>
-            <p><a href="https://www.youtube.com/watch?v=O7J-00kn7aU " > Lien vers une vidéo de travail groupe </a></p>
-        </section>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Rayan Saboun. Tous droits réservés.</p>
+            <p><a href="mailto:rayan.saboun@gmail.com"><i class="fas fa-envelope"></i> rayan.saboun@gmail.com</a></p>
+        </footer>
+    </div>
 
-   <!-- Bas de page -->
-   <footer style="background-color: #008080   ; color: #fffad9   ;">
-    <p>&copy; 2024 Rayan.Saboun. Tous droits réservés.</p>
-</footer>
+    <script>
+        // Création des particules
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 20; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 15 + 's';
+            particle.style.animationDuration = (10 + Math.random() * 10) + 's';
+            particlesContainer.appendChild(particle);
+        }
+    </script>
 </body>
 </html>
