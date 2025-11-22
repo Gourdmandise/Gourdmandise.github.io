@@ -223,6 +223,23 @@ nav {
     font-size: 1.1em;
 }
 
+.passion-link {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background: rgba(255, 250, 217, 0.2);
+    color: #fffad9;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.85em;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 250, 217, 0.3);
+}
+
+.passion-link:hover {
+    background: rgba(255, 250, 217, 0.4);
+    transform: scale(1.05);
+}
+
 /* Liens sociaux */
 .social-links {
     display: flex;
