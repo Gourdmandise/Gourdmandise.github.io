@@ -123,11 +123,18 @@ nav {
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     position: relative;
     overflow: hidden;
+    outline: none;
 }
 
 .nav-btn:hover {
     transform: translateY(-5px) scale(1.05);
     box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.nav-btn:focus,
+.nav-btn:active {
+    outline: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
 .nav-btn.active {
@@ -223,6 +230,30 @@ nav {
     font-size: 1.1em;
 }
 
+.passion-link {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background: rgba(255, 250, 217, 0.2);
+    color: #fffad9;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.85em;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 250, 217, 0.3);
+    outline: none;
+}
+
+.passion-link:hover {
+    background: rgba(255, 250, 217, 0.4);
+    transform: scale(1.05);
+}
+
+.passion-link:focus,
+.passion-link:active {
+    outline: none;
+    box-shadow: none;
+}
+
 /* Liens sociaux */
 .social-links {
     display: flex;
@@ -243,11 +274,17 @@ nav {
     font-weight: bold;
     transition: all 0.3s ease;
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    outline: none;
 }
 
 .social-btn:hover {
     transform: translateY(-5px) scale(1.1);
     box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.social-btn:focus,
+.social-btn:active {
+    outline: none;
 }
 
 .social-btn.linkedin:hover { 
@@ -375,11 +412,18 @@ footer a:hover {
     margin-bottom: 25px;
     transition: all 0.3s ease;
     border: 1px solid rgba(255, 250, 217, 0.3);
+    outline: none;
 }
 
 .back-btn:hover {
     background: rgba(255, 250, 217, 0.3);
     transform: translateX(-5px);
+}
+
+.back-btn:focus,
+.back-btn:active {
+    outline: none;
+    box-shadow: none;
 }
 
 /* Grille galerie */
