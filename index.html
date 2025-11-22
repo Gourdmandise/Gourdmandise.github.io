@@ -24,63 +24,44 @@
 
         <!-- Navigation -->
         <nav>
-            <a href="#" class="nav-btn active" onclick="showPage('accueil', this)">
+            <a href="index.html" class="nav-btn active">
                 <i class="fas fa-home"></i> Accueil
             </a>
-            <a href="#" class="nav-btn" onclick="showPage('info', this)">
+            <a href="informations.html" class="nav-btn">
                 <i class="fas fa-info-circle"></i> Informations
             </a>
         </nav>
 
-        <!-- Page Accueil -->
-        <div id="accueil" class="page active">
-            <div class="section">
-                <h2><i class="fas fa-user"></i> Présentation</h2>
-                <p>
-                    Actuellement étudiant en 2ème année 
-                    de BUT Informatique à l'IUT de Blagnac. Passionné par le monde de la technologie, 
-                    je suis à la recherche d'une opportunité de stage dans le domaine de l'informatique 
-                    d'une durée de 2 mois pour début mars.
-                </p>
-            </div>
-
-            <div class="section">
-                <h2><i class="fas fa-heart"></i> Mes Passions</h2>
-                <div class="passions-grid">
-                    <div class="passion-card">
-                        <i class="fas fa-paper-plane"></i>
-                        <span>Origami</span>
-                    </div>
-                    <div class="passion-card">
-                        <i class="fas fa-table-tennis-paddle-ball"></i>
-                        <span>Tennis de Table</span>
-                    </div>
-                    <div class="passion-card">
-                        <i class="fas fa-gamepad"></i>
-                        <span>Jeux Vidéo</span>
-                    </div>
-                    <div class="passion-card">
-                        <i class="fas fa-book-open"></i>
-                        <span>Manhwa</span>
-                    </div>
-                </div>
-            </div>
+        <!-- Section Présentation -->
+        <div class="section">
+            <h2><i class="fas fa-user"></i> Présentation</h2>
+            <p>
+                Je m'appelle <strong>SABOUN Rayan</strong>. Je suis actuellement étudiant en deuxième année 
+                de BUT Informatique à l'IUT de Blagnac. Passionné par le monde de la technologie, 
+                je suis à la recherche d'une opportunité de stage dans le domaine de l'informatique 
+                d'une durée de 2 mois pour début mars.
+            </p>
         </div>
 
-        <!-- Page Informations -->
-        <div id="info" class="page">
-            <div class="section">
-                <h2><i class="fas fa-link"></i> Mes Réseaux</h2>
-                <div class="social-links">
-                    <a href="https://fr.linkedin.com/in/rayan-saboun-028a452b0" target="_blank" class="social-btn linkedin">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                    <a href="https://www.facebook.com/rayan.saboun.54" target="_blank" class="social-btn facebook">
-                        <i class="fab fa-facebook"></i> Facebook
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=O7J-00kn7aU" target="_blank" class="social-btn youtube">
-                        <i class="fab fa-youtube"></i> Projet Vidéo
-                    </a>
+        <!-- Section Passions -->
+        <div class="section">
+            <h2><i class="fas fa-heart"></i> Mes Passions</h2>
+            <div class="passions-grid">
+                <div class="passion-card">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Origami</span>
+                </div>
+                <div class="passion-card">
+                    <i class="fas fa-table-tennis-paddle-ball"></i>
+                    <span>Tennis de Table</span>
+                </div>
+                <div class="passion-card">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Jeux Vidéo</span>
+                </div>
+                <div class="passion-card">
+                    <i class="fas fa-book-open"></i>
+                    <span>Manhwa</span>
                 </div>
             </div>
         </div>
@@ -103,28 +84,6 @@
             particle.style.animationDuration = (10 + Math.random() * 10) + 's';
             particlesContainer.appendChild(particle);
         }
-
-        // Navigation entre pages
-        function showPage(pageId, btn) {
-            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
-            document.getElementById(pageId).classList.add('active');
-            btn.classList.add('active');
-        }
-
-        // Animation au scroll
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.section').forEach(section => {
-            observer.observe(section);
-        });
     </script>
 </body>
 </html>
