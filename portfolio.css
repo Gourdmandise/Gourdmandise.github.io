@@ -577,6 +577,88 @@ footer a:hover {
 .social-btn.discord:hover { background: linear-gradient(135deg, #5865F2, #7289da); color: white; }
 .social-btn.twitch:hover { background: linear-gradient(135deg, #9146FF, #a970ff); color: white; }
 
+/* Setup PC */
+.setup-card {
+    background: linear-gradient(135deg, rgba(255,250,217,0.15), rgba(255,250,217,0.05));
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 250, 217, 0.2);
+}
+
+.setup-card h3 {
+    color: #fffad9;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.setup-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.setup-list li {
+    padding: 12px 15px;
+    background: rgba(255, 250, 217, 0.1);
+    border-radius: 8px;
+    color: #fffad9;
+    transition: all 0.3s ease;
+}
+
+.setup-list li:hover {
+    background: rgba(255, 250, 217, 0.2);
+    transform: translateX(5px);
+}
+
+.setup-list li strong {
+    color: #ffc800;
+}
+
+.setup-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.setup-item {
+    background: linear-gradient(135deg, rgba(255,250,217,0.2), rgba(255,250,217,0.1));
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.setup-item:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, rgba(255,250,217,0.3), rgba(255,250,217,0.2));
+}
+
+.setup-item i {
+    font-size: 2em;
+    color: #fffad9;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.setup-item span {
+    color: #fffad9;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.setup-item p {
+    font-size: 0.85em;
+    opacity: 0.8;
+    margin: 0;
+}
+
 /* Manhwa grid */
 .manhwa-grid {
     display: grid;
