@@ -1,0 +1,23 @@
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    background: rgba(255, 250, 217, 0.2);
+    color: #fffad9;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 250, 217, 0.3);
+    outline: none;
+}
+
+.back-btn:hover {
+    background: rgba(255, 250, 217, 0.3);
+    transform: translateX(-5px);
+}
+
+.passion-content {
+    margin-top: 20px;
+}

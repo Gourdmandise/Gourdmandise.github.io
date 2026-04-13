@@ -1,0 +1,31 @@
+<!-- Particules -->
+<div class="particles" id="particles"></div>
+
+<div class="container">
+    <!-- Header -->
+    <app-header></app-header>
+
+    <!-- Navigation -->
+    <app-navigation></app-navigation>
+
+    <!-- Router Outlet -->
+    <router-outlet></router-outlet>
+
+    <!-- Footer -->
+    <app-footer></app-footer>
+</div>
+
+<script>
+    // Création des particules
+    const particlesContainer = document.getElementById('particles');
+    if (particlesContainer) {
+        for (let i = 0; i < 20; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 15 + 's';
+            particle.style.animationDuration = (10 + Math.random() * 10) + 's';
+            particlesContainer.appendChild(particle);
+        }
+    }
+</script>
