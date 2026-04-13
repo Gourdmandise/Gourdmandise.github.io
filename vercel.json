@@ -1,4 +1,10 @@
 {
   "framework": "angular",
-  "outputDirectory": "dist/Gourdmandise.github.io"
+  "outputDirectory": "dist/Gourdmandise.github.io/browser",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
