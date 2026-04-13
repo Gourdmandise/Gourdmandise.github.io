@@ -210,11 +210,11 @@ nav {
     text-align: center;
     transition: all 0.3s ease;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .passion-card:hover {
     transform: scale(1.05) rotate(2deg);
-    background: linear-gradient(135deg, rgba(255,250,217,0.3), rgba(255,250,217,0.2));
 }
 
 .passion-card i {
